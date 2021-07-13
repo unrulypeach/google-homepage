@@ -6,6 +6,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
         <title>Google homepage</title>
     </head>
 
@@ -17,20 +19,32 @@
                     <li><a href="">Store</a></li>
                 </ul>
             </div>
-        </div>
-
-        <div class="logo-pic">
-            <img src="images/googlelogo_color_272x92dp.png">
-        </div>
+            <div class="nb-right">
+                <ul>
+                    <li><a href="">Gmail</a></li>
+                    <li><a href="">Images</a></li>
+                    <li><a href=""> <span class="material-icons md-18">
+                        apps</span></a></li>
+                    <li><a href=""><button id="sign-in">Sign In</button> </a></li>
+                </ul>
+            </div>
+        </div>   
     </header>
 
     <body class="body">
-        <div class="search-box">
-            <input type="text" placeholder="try searching your CC #">
+        <div class="container">
         </div>
-        <div class="input-buttons">
-            <button class="button1">Google Search</button>
-            <button class="button1">I'm Feeling Lucky</button>
+        <div class="container">
+            <div class="logo-pic">
+                <img src="images/googlelogo_color_272x92dp.png" alt="The word 'google' in color">
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="input-buttons">
+                <button class="below-sb" id="button1">Google Search</button>
+                <button class="below-sb" id="button2">I'm Feeling Lucky</button>
+            </div>
         </div>
     </body>
 

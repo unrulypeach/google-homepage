@@ -13,7 +13,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 5px;
+  font-size: 13px;
   font: inherit;
   vertical-align: baseline;
   font-family: 'Open Sans', sans-serif;
@@ -24,42 +24,26 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 
 /* logo centering, need to vertically center*/
-.header .logo-pic img {
+.logo-pic img {
     display: block;
-    margin: 25% auto 0 auto;
+    margin: 63px auto 0 auto;
 }
+
 
 /* */
 .nb-left, .f-left {
-    display: inline;
+    display: inline-block;
+
     float:left
 }
 
-.f-right {
+.nb-right, .f-right {
     float:right
 }
 
+/*.material-icons.md-18 { font-size: 18px; }*/
 
 li {
     display: inline-block;
@@ -84,7 +68,8 @@ li a:hover {
     width: 100%;
     background-color: transparent;
     left: 0px;
-    height: 5%;
+    height: 48px;
+    padding: 6px;
 }
 
 .foot {
@@ -104,13 +89,44 @@ li a:hover {
 
 }
 
-.search-buttons{
-    display: block;
+.below-sb{
+  padding: 11px 21px;
+  color: rgb(61, 61, 61);
+}
+
+#button1{
     margin: 0 auto;
     display: inline-block;
     margin: 20px auto 0 33%;
     border-radius: 5px;
-    border:none;
-    font-family: 'Open Sans', sans-serif;    
+    border: 0px;
 }
 
+#button2{
+  margin: 0 auto;
+  display: inline-block;
+  margin: 20px auto 0 2px;
+  border-radius: 5px;
+  border: 0px;
+}
+
+#button1:hover, #button2:hover {
+  border: solid 1px rgb(151, 150, 150);
+} 
+
+#sign-in{
+  color: white;
+  background-color: #4285f4;
+  border: 0px;
+  font-weight: bold;
+  padding: 7px 10px;
+}
+
+.body {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.body > .container {
+  flex-grow: 2;
+}
