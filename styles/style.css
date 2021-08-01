@@ -16,7 +16,7 @@ time, mark, audio, video {
   font-size: 13px;
   font: inherit;
   vertical-align: baseline;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Arial, sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -24,109 +24,183 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-
-/* logo centering, need to vertically center*/
-.logo-pic img {
-    display: block;
-    margin: 63px auto 0 auto;
+a {
+  text-decoration: none;
 }
 
-
-/* */
-.nb-left, .f-left {
-    display: inline-block;
-
-    float:left
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nb-right, .f-right {
-    float:right
+.container.nav-bar {
+  height: 48px;
+  padding: 6px;
+  color: #222222;
 }
-
-/*.material-icons.md-18 { font-size: 18px; }*/
-
-li {
-    display: inline-block;
-}
-
-li a {
-    font-size: 0.5em;
-    display: inline-block;
-    color: rgb(61, 61, 61);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    text-decoration: underline;
-}
-
-.nav-bar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: transparent;
-    left: 0px;
-    height: 48px;
-    padding: 6px;
-}
-
-.foot {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 5%;
-    background-color: rgb(226, 225, 225);
-    left: 0px;
-}
-
-.search-box input{
-    display: block;
-    margin: 20px auto 0 auto;
-    border-radius: 10cm;
-    width: 50%;
-
-}
-
-.below-sb{
-  padding: 11px 21px;
-  color: rgb(61, 61, 61);
-}
-
-#button1{
-    margin: 0 auto;
-    display: inline-block;
-    margin: 20px auto 0 33%;
-    border-radius: 5px;
-    border: 0px;
-}
-
-#button2{
-  margin: 0 auto;
-  display: inline-block;
-  margin: 20px auto 0 2px;
-  border-radius: 5px;
-  border: 0px;
-}
-
-#button1:hover, #button2:hover {
-  border: solid 1px rgb(151, 150, 150);
-} 
 
 #sign-in{
+  display: inline-block;
   color: white;
   background-color: #4285f4;
   border: 0px;
-  font-weight: bold;
-  padding: 7px 10px;
+  padding: 9px 23px;
+  border-radius: 4px;
 }
 
-.body {
+.container.footer {
+  height: 47px;
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.button {
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.material-icons.md-18 { 
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button.top {
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.button.foot {
+  padding: 15px;
+  color: #70757a;
+}
+
+/**LR centerting for GOOGLE
+
+.container-centering {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+}
+**/
+
+.logo-pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 92px;
+  max-height: 290px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  height: calc(100%-560px);
 }
 
-.body > .container {
-  flex-grow: 2;
+.logo-pic .blank-space {
+  max-height: 92px;
+  position: relative;
+  height: 100%;
+  margin-top: auto;
 }
+
+.logo-pic img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  width: auto;
+}
+
+
+.search-box-container {
+  display: flex;
+  max-width: 584px;
+  margin: 0 auto;
+  height: 44px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+}
+
+.search-box-container:hover {
+  box-shadow: 0px 0px 8px #dadce0;
+}
+
+input:focus {
+  outline:none;
+}
+
+.search-text-box {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.search-box-items {
+  display: flex;
+  flex: 1;
+  padding-left: 15px;
+}
+
+
+.material-icons.md-grey {
+  display: block; 
+  color: #9aa0a6;
+  padding: 0;
+  font-size: 20px;
+}
+
+.search-box-items input{
+  display: flex;
+  flex: 1;
+  margin: 0;
+  width: 50%;
+  height: 3em;
+  flex-wrap: wrap;
+  align-self: stretch;
+  border: none;
+  background-color: transparent;
+}
+
+.search-icon-container {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+}
+
+
+.button-item {
+  margin: 11px 4px;
+  padding: 0 16px;
+  color: rgb(61, 61, 61);
+  height: 36px;
+  line-height: 27px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.button-item:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+  border: solid 1px #dadce0;
+} 
+
+h1 {
+  text-align: center;
+  font-size: 13px;
+  color: #3C4043;
+}
+
+
+
+
+

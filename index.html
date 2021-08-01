@@ -11,57 +11,67 @@
         <title>Google homepage</title>
     </head>
 
-    <header class="header">
-        <div class="nav-bar">
-            <div class="nb-left">
-                <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Store</a></li>
-                </ul>
+    <header>
+        <div class="container nav-bar">
+
+            <div class="nav-left">
+                <a href="" class="button top">About</a>
+                <a href="" class="button top">Store</a>
             </div>
-            <div class="nb-right">
-                <ul>
-                    <li><a href="">Gmail</a></li>
-                    <li><a href="">Images</a></li>
-                    <li><a href=""> <span class="material-icons md-18">
-                        apps</span></a></li>
-                    <li><a href=""><button id="sign-in">Sign In</button> </a></li>
-                </ul>
+
+            <div class="nav-right">
+                <a href="" class="button top">Gmail</a>
+                <a href="" class="button top">Images</a>
+                <a href="" class="button top"><span class="material-icons md-18">apps</span></a>
+                <a href="" class="button top"><button id="sign-in">Sign in</button> </a>
             </div>
+
         </div>   
     </header>
 
     <body class="body">
-        <div class="container">
-        </div>
-        <div class="container">
+        <div class="main-top">
+
             <div class="logo-pic">
-                <img src="images/googlelogo_color_272x92dp.png" alt="The word 'google' in color">
+
+                    <div class="blank-space">
+                    <img src="images/googlelogo_color_272x92dp.png" alt="The word 'google' in color">
+                    </div>
             </div>
-            <div class="search-box">
-                <input type="text" placeholder="search">
+
+            <div class="search-box-container">
+                <div class="search-box-items">
+
+                    <div class="search-icon-container">
+                        <span class="material-icons md-grey search-icon"> search </span>
+                    </div>
+
+                    <input class="search-text-box" type="text" placeholder="">
+                    <div></div>
+                </div>
             </div>
-            <div class="input-buttons">
-                <button class="below-sb" id="button1">Google Search</button>
-                <button class="below-sb" id="button2">I'm Feeling Lucky</button>
+
+            <div class="button-container">
+                <button class="button-item search-button" >Google Search</button>
+                <button class="button-item lucky-button" >I'm Feeling Lucky</button>
+            </div>
+
+            <div class="flex-end">
+                <h1>Google offered in: <a href="">Francais</a> </h1>
             </div>
         </div>
     </body>
 
-    <footer class="foot">
-        <div class="f-left">
-            <ul>
-                <li><a href="">Advertising</a></li>
-                <li><a href="">Buisness</a></li>
-                <li><a href="">How Search Works</a></li>
-            </ul>
+    <footer class="container footer">
+        <div class="foot-left">
+            <a href="" class="button foot">Advertising</a>
+            <a href="" class="button foot">Buisness</a>
+            <a href="" class="button foot">How Search Works</a>
         </div>
-        <div class="f-right">
-            <ul>
-                <li><a href="">Privacy</a></li>
-                <li><a href="">Terms</a></li>
-                <li><a href="">Settings</a></li>
-            </ul>
+        <div class="foot-right">
+            <a href="" class="button foot">Privacy</a>
+            <a href="" class="button foot">Terms</a>
+            <a href="" class="button foot">Settings</a>
         </div>
         
     </footer>
